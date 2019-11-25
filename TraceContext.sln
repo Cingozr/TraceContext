@@ -3,14 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29424.173
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TraceContext.Web", "TraceContext.Web\TraceContext.Web.csproj", "{2B78BE82-9814-4D34-937B-D7B79D68C308}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2AD3C913-E7D9-47CD-AB41-AAE2AF0AE013}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TraceContext.ConsoleApp", "TraceContext.ConsoleApp\TraceContext.ConsoleApp.csproj", "{BA2FDEB2-AB35-4320-8B76-7BC3799A73F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TraceContext.Web", "src\TraceContext.Web\TraceContext.Web.csproj", "{2B78BE82-9814-4D34-937B-D7B79D68C308}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TraceContext.GatewayProxyApi", "TraceContext.GatewayProxyApi\TraceContext.GatewayProxyApi.csproj", "{EC74A2D7-6F70-4DD5-9EBD-9D5D52338FDE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TraceContext.ConsoleApp", "src\TraceContext.ConsoleApp\TraceContext.ConsoleApp.csproj", "{BA2FDEB2-AB35-4320-8B76-7BC3799A73F7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TraceContext.BackendApi", "TraceContext.BackendApi\TraceContext.BackendApi.csproj", "{41D98617-A1E6-477A-9FD2-1ED7743695C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TraceContext.GatewayProxyApi", "src\TraceContext.GatewayProxyApi\TraceContext.GatewayProxyApi.csproj", "{EC74A2D7-6F70-4DD5-9EBD-9D5D52338FDE}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TraceContext.BackendApi", "src\TraceContext.BackendApi\TraceContext.BackendApi.csproj", "{41D98617-A1E6-477A-9FD2-1ED7743695C4}"
+EndProject
+
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,6 +39,12 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2B78BE82-9814-4D34-937B-D7B79D68C308} = {2AD3C913-E7D9-47CD-AB41-AAE2AF0AE013}
+		{BA2FDEB2-AB35-4320-8B76-7BC3799A73F7} = {2AD3C913-E7D9-47CD-AB41-AAE2AF0AE013}
+		{EC74A2D7-6F70-4DD5-9EBD-9D5D52338FDE} = {2AD3C913-E7D9-47CD-AB41-AAE2AF0AE013}
+		{41D98617-A1E6-477A-9FD2-1ED7743695C4} = {2AD3C913-E7D9-47CD-AB41-AAE2AF0AE013}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EAC292A5-D83A-4966-939F-EBB0AAE25309}
